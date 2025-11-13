@@ -5,7 +5,6 @@ footer {
 
     .container_footer {
         position: relative;
-        background: red;
         overflow-x: clip;
         /* flex */
         display: flex;
