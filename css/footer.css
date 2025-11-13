@@ -1,10 +1,12 @@
 footer {
     position: relative;
-    padding: 56px;
+    padding-block: 56px;
     background: var(--color-black);
 
     .container_footer {
         position: relative;
+        background: red;
+        overflow-x: clip;
         /* flex */
         display: flex;
         gap: 40px;
