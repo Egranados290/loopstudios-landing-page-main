@@ -1,0 +1,102 @@
+header {
+    position: relative;
+    height: 650px;
+
+    .container_header {
+        display: flex;
+        gap: 130px;
+        flex-direction: column;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(0, 0, 0, .5);
+        }
+
+        .content_header {
+            position: relative;
+            padding-block: 40px 0;
+            /* flex */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .nav_menu {
+                display: none;
+            }
+        }
+
+        .content_hero {
+            position: relative;
+
+            .info_hero {
+                border: 2px solid var(--color-white);
+                padding-block: var(--hero-padding-block);
+                padding-inline: var(--hero-padding-inline);
+
+                .title_hero {
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    color: var(--color-white);
+                    font-family: var(--font-h);
+                    font-size: var(--font-size-h);
+                }
+            }
+        }
+    }
+
+
+    .image_header {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+
+        picture {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media (width >=48rem) {
+    header {
+        .container_header {
+            .content_hero {
+                .info_hero {
+                    width: var(--width-hero);
+                }
+            }
+        }
+    }
+}
+
+@media (width >=64rem) {
+    header {
+        .container_header {
+            .content_header {
+                .nav_menu {
+                    display: inline-flex;
+                    gap: 32px;
+
+                    a {
+                        font-size: var(--a);
+                        font-family: var(--font-p);
+                        color: var(--color-white);
+                    }
+                }
+
+                .btn_menu {
+                    display: none;
+                }
+            }
+        }
+    }
+}

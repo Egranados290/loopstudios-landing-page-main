@@ -1,0 +1,30 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-grey: #D8D8D8;
+    --color-blue-100: #E5EAF1;
+    --color-blue-50: #F6FAFF;
+    --gradient-bottom: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    --gradient-left: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+
+    /* Tamaños de parrados y fuentes */
+    --font-h: "Josefin Sans", sans-serif;
+    --font-p: "Alata", sans-serif;
+    --a: 0.938rem;
+    --font-size-h: clamp(2.5rem, 0.5916rem + 8.1425vw, 4.5rem);
+    --font-size-h-services: clamp(2rem, 1.0458rem + 4.0712vw, 3rem);
+    --font-size-h-card: clamp(1.5rem, 1.2452rem + 1.087vw, 2rem);
+
+    /* Anchos de contenedores */
+    --width-wrapper: clamp(20.4375rem, 3.184rem + 73.615vw, 69.4375rem);
+    /* --width-hero: clamp(38rem, 32.1224rem + 12.2449vw, 40.625rem); */
+    --width-hero: clamp(38rem, 28.2609rem + 20.2899vw, 40.625rem);
+
+    /* Padding contenedores */
+    --hero-padding-block: clamp(1.125rem, 0.3607rem + 3.2609vw, 2.625rem);
+    --hero-padding-inline: clamp(1.5rem, 0.9905rem + 2.1739vw, 2.5rem);
+
+    /* Posicion  */
+    --text-card: clamp(1.25rem, -1.8269rem + 4.8077vw, 2.5rem);
+
+}

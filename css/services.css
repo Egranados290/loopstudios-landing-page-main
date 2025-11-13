@@ -1,0 +1,116 @@
+main {
+    .container_main {
+        position: relative;
+        padding-block: 96px;
+        /* flex */
+        display: flex;
+        gap: 96px;
+        flex-direction: column;
+
+        .services {
+            .content_services {
+                position: relative;
+                text-align: center;
+                /* flex */
+                display: flex;
+                gap: 48px;
+                flex-direction: column;
+
+                .info_services {
+                    position: relative;
+                    padding-inline: 24px;
+                    /* flex */
+                    display: flex;
+                    gap: 16px;
+                    flex-direction: column;
+
+                    .title_services {
+                        text-transform: uppercase;
+                        font-weight: 300;
+                        font-family: var(--font-h);
+                        font-size: var(--font-size-h-services);
+                    }
+
+                    .description_services {
+                        font-size: var(--a);
+                        font-weight: 400;
+                        line-height: 25px;
+                        font-family: var(--font-p);
+                        color: rgb(0, 0, 0, .50);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (width >=48rem) {
+    .services {
+        .content_services {
+            .images_services {
+                height: 284px;
+                overflow: hidden;
+
+                picture {
+                    img {
+                        width: 100%;
+                        height: 120%;
+                    }
+                }
+            }
+
+            .info_services {
+                padding-inline: 0 !important;
+            }
+        }
+    }
+}
+
+@media (width >=64rem) {
+    .services {
+        .content_services {
+            .images_services {
+                height: auto;
+
+                picture {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (width >=81.25rem) {
+    .services {
+        position: relative;
+
+        .content_services {
+            height: 500px;
+
+            .images_services {
+                width: 741px;
+                height: 100%;
+
+                picture {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .info_services {
+                position: absolute !important;
+                bottom: 0;
+                right: 0;
+                width: 541px;
+                padding-inline: 96px 0 !important;
+                padding-block: 97px 0 !important;
+                background: var(--color-white);
+            }
+        }
+    }
+}
