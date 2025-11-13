@@ -22,7 +22,7 @@
           <a href="#">Products</a>
           <a href="#">Support</a>
         </nav>
-        <button class="btn_menu">
+        <button class="btn_menu" id="btn_modal">
           <img src="./images/icon-hamburger.svg" alt="icon-hamburger">
         </button>
       </div>
@@ -39,6 +39,24 @@
       </picture>
     </div>
   </header>
+
+  <div class="modal" id="modal">
+    <div class="container_modal wrapper">
+      <div class="content_modal">
+        <img src="./images/logo.svg" alt="logo" width="144" height="42">
+        <button class="btn_menu_close" id="btn_modal">
+          <img src="./images/icon-close.svg" alt="icon-close">
+        </button>
+      </div>
+      <nav class="nav_menu">
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Events</a>
+        <a href="#">Products</a>
+        <a href="#">Support</a>
+      </nav>
+    </div>
+  </div>
 
   <main>
 
@@ -156,7 +174,6 @@
       </div>
     </div>
   </footer>
-
 
   <script src="modal.js" defer></script>
 </body>
